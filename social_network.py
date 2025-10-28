@@ -69,3 +69,11 @@ network.add_friendship("Morgan", "Riley")
 network.add_friendship("Alex", "Taylor")
 
 network.print_network()
+
+#200-300 Word Design Memo
+
+#The implemented system models a simple social network using object-oriented principles in Python. The design is centered around two classes: Person and SocialNetwork.
+#The Person class holds the details of the individual users of the online community. The Person class contains a name attribute and an attribute called friends that holds lists of friends. The add_friend functionality prevents friend duplication. The above design encourages data integrity for an individual. The friend management system remains simple.
+#TheSocialNetworkclass holds the overall management of the network. TheSocialNetworkclass uses a dictionary calledpeople that contains usernames askeys to Person objects. This helps in easy lookups and handling of users. The add_person function helps add new users only if those users are not present in the list. The add_friendship function helps add friendship to two users only when both users are present in the overall network. The print_network function helps print the networking details of each person.
+#The design emphasizes clarity, modularity, and maintainability. By separating the individual (Person) and network (SocialNetwork) responsibilities, the code is flexible for future extensions, such as removing friends, suggesting connections, or implementing advanced analytics. Error handling is basic but informative, alerting users when attempted operations involve nonexistent individuals.
+#Nevertheless, it offers a sound starting point for simulating the networking relationships that incorporates simplicity and accuracy. The object-oriented design of the code makes it easy to manage and test and thus can serve as a demonstration version of a more complex social networking program."""
